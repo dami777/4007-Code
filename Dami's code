@@ -1,0 +1,96 @@
+public class Multiplayer
+{
+    public const OP_SHOT       :string = "S";
+    public const OP_DIE        :string = "D";
+    public const OP_POSITION   :string = "P";
+
+    public function Multiplayer() {
+         //Network connection code to go here
+{
+
+    public function sendObject(obj :Object) :void {
+         //Network Code  shares the object with each player
+
+    }
+}
+
+
+
+
+
+player battle(player account) {
+   ...
+   do {
+       ...
+       if (option == "A" || option =="a")
+       {
+           int attack = rand()%(account.getDamage());
+           srand(time(NULL));
+           int mobAttack = rand()%(monster.getDamage());
+           monster.setHealth(monster.getHealth()-attack);
+           account.setHealth(account.gethealth()-mobAttack);
+           cout <<"You attack the monster" << attack << "damage\n";
+           Sleep(500);
+           cout <<"The monster counter attacks for" << mobAttack << "damage\n";
+           Sleep(500);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+int player::attack(classMob& mob){
+    int attack = rand()% damage;
+    mob.taleDamage(attack);
+    return attack;
+}
+
+void player::takeDamage(int damage){
+    health -= damage;
+    if (health < 0) health =0;
+}
+
+bool player::isAlive(){
+     return health > 0;
+}
+
+int classMob::attack(player& p){
+    int attack = rand()%da,age;
+    p.takeDamage(attack);
+    return attack;
+}
+
+void classMob::takeDamage(int damage){
+     health -= damage;
+     if(health < 0){ health =0;}
+}
+
+
+
+
+for (int i=0; i<PLAYERS.SIZE();
+         (incomingPlayer- diff="(int) int{i++(>ID - player[i].ID);
+           if (!diff)
+           {
+             players[i].position[0] = incomingPlayer->position[0];
+             players[i].position[1] = incomingPlayer->position[1];
+             players[i].position[2] = incomingPlayer->position[2];
+             players[i].orientation[0]=
+                                   incomingPlayer->orientation[0];
+             players[i].orientation[1]=
+                                   incomingPlayer->orientation[1];
+             players[i].orientation[2]=
+                                   incomingPlayer->orientation[2];
+             players[i].speed = incomingPlayer->speed;
+             players[i].missiles = incomingPlayer->missiles;
+             players[i].health = incomingPlayer->health;
+           }
+       }
+  }
